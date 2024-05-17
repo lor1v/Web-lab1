@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>trebam strelicu.svg</title>
+   <link rel="icon" type="image/x-icon" sizes="196x196" href="images/KSET-sign-white.png">
+   <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="styles/mobile.css" media="max-width:768px">
+
+
+</head>
+
+<body>
+   <div id="container1">
+      <div id="logo-containter">
+         <a href="index.html">
+            <img id="logo-slika" src="images/KSET-sign-white.png" alt="">
+
+         </a>
+      </div>
+      <div id="naslov">trebam strelicu.svg</div>
+      <div class="kosarica-container">
+         <div id="cart_everything">
+            <a href="cart.html">
+               <img id="cart-slika" class="header-slika" src="images/shoppingcart.jpg" alt="">
+               <span class="circle">
+                  <div id="cart_num"></div>
+               </span>
+
+            </a>
+         </div>
+
+         <img id="search-slika" class="header-slika" src="images/search.jpg" alt="">
+
+
+      </div>
+
+   </div>
+
+   <div id="container2">
+      <div class="lijepaslika-container">
+
+         <img id="lijepaslika" src="images/velikaslika.jpg">
+         <p id="dobrodosli">Veliki pozdrav</p>
+      </div>
+
+   </div>
+
+   <div id="container3">
+      <div class="kategorije-linkovi">
+         <div id="kategorije">
+         </div>
+         <div id="linkovi">
+            <p class="onerow">Kontakt</p>
+            <p class="onerow">Newsletter</p>
+            <p class="onerow">Pretplati se</p>
+         </div>
+      </div>
+      <div id="container_items">
+      </div>
+   </div>
+
+   <!-- template za clickable kategorije-->
+   <template id="kat_row">
+      <button type="button" class="clickablecategory"></button>
+   </template>
+
+
+   <!-- template za addable items-->
+   <template id="item">
+      <div class="oneitem">
+
+         <div class="cart_overlay">
+            <img class="item_slika" src="">
+            <img class="cart_overlay_image" src="images/shoppingcart.jpg">
+         </div>
+
+         <p class="item_ime">proizvod</p>
+         <p class="item_cat">kategorija</p>
+         <span class="circle_on_item">
+            <p class="num_of_this_item"></p>
+         </span>
+      </div>
+   </template>
+
+   <script src="scripts/data.js"></script>
+   <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+body {
+   color: white;
+}
+
+* {
+   border-radius: 8px;
+}
+
+@font-face {
+   font-family: "MAROLA";
+   src: url(../fonts/MAROLA__.TTF) format("truetype");
+}
+
+@font-face {
+   font-family: "neon";
+   src: url(../fonts/Neon.ttf);
+}
+
+#container1 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+
+   width: auto;
+   min-height: 80px;
+   height: fit-content;
+
+   margin: 10px;
+   padding: 10px;
+   background-color: burlywood;
+}
+
+#container2 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 10px;
+   margin-top: 2%;
+   height: 55vh;
+   background-color: burlywood;
+}
+
+#container3 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 10px;
+   margin-top: 2%;
+   height: fit-content;
+   background-color: white;
+}
+
+
+#logo-containter {
+   width: 16vw;
+}
+
+#logo-slika {
+   width: 9vh;
+   height: 9vh;
+   margin: auto;
+   margin-left: 20px;
+}
+
+#naslov {
+   font-family: neon;
+   color: white;
+   font-size: 60px;
+   text-align: center;
+   flex-shrink: 2;
+   flex-grow: 2;
+}
+
+.kosarica-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+
+   align-items: baseline;
+   height: auto;
+   width: 150px
+}
+
+
+
+.header-slika {
+   position: relative;
+   min-width: 60px;
+   width: 60px;
+   height: 60px;
+   margin-right: 20px;
+}
+
+
+.lijepaslika-container {
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+#lijepaslika {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: left;
+}
+
+#dobrodosli {
+   font-family: neon, monospace;
+   font-size: 70px;
+   width: 70%;
+   margin-bottom: 50px;
+   text-align: right;
+   color: burlywood;
+   margin-bottom: 0;
+   position: absolute;
+   right: 0;
+   bottom: 20px;
+}
+
+.kategorije-linkovi {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   height: fit-content;
+   min-width: 100px;
+   width: 18vw;
+   margin-right: 10px;
+}
+
+#kategorije {
+   margin-bottom: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+
+   font-family: monospace;
+   color: black;
+   align-items: center;
+   gap: 2px;
+   height: fit-content;
+   width: 100%;
+   background-color: burlywood;
+
+}
+
+#linkovi {
+   height: 30%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   background-color: burlywood;
+   padding-bottom: 10px;
+}
+
+
+.onerow {
+   color: black;
+   font-size: large;
+   text-align: center;
+
+   font-family: monospace;
+   background-color: burlywood;
+   border: none;
+   height: 20px;
+   margin: 6%;
+   cursor: pointer;
+}
+
+#container_items {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+
+   height: fit-content;
+   width: 75vw;
+   background-color: burlywood;
+}
+
+
+.oneitem {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: white;
+   color: black;
+   font-family: monospace;
+   text-align: center;
+   width: 200px;
+   height: 220px;
+   margin: 2%;
+   position: relative;
+}
+
+.clickablecategory {
+   background-color: burlywood;
+   color: black;
+   font-family: monospace;
+   font-size: large;
+   text-align: center;
+   width: 90%;
+   min-height: 40px;
+   height: fit-content;
+   border: none;
+   cursor: pointer;
+}
+
+.item_slika {
+   margin-top: 10px;
+   height: 120px;
+   width: 120px;
+}
+
+.item_ime {
+   font-size: 16px;
+   margin-bottom: 4%;
+}
+
+.item_cat {
+   margin-bottom: 20px;
+}
+
+#cart_everything {
+   position: relative;
+}
+
+.circle {
+   position: absolute;
+   bottom: 0px;
+   right: 10px;
+
+   height: 25px;
+   width: 25px;
+   background-color: rgb(145, 117, 80);
+   opacity: 100%;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+#cart_num {
+   text-decoration: none;
+   font-size: 16px;
+   font-family: monospace;
+   text-align: center;
+   position: relative;
+   top: 3px;
+
+   color: #fff;
+}
+
+.cart_overlay {
+   position: relative;
+}
+
+.cart_overlay .cart_overlay_image {
+   position: absolute;
+   top: 5px;
+   left: -5px;
+   height: 130px;
+   width: 130px;
+   display: none
+}
+
+.oneitem:hover .cart_overlay_image {
+   display: block;
+   opacity: 0.75;
+   cursor: pointer;
+
+}
+
+
+.num_of_this_item {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+
+   margin: 0;
+   padding-bottom: 3px;
+   font-size: 16px;
+   color: white;
+   font-family: monospace;
+   width: 100%;
+   text-align: center;
+}
+
+.circle_on_item {
+   position: absolute;
+   bottom: 5px;
+   right: 10px;
+
+   height: 25px;
+   width: 25px;
+   background-color: rgb(145, 117, 80);
+   opacity: 100%;
+   border-radius: 50%;
+   display: none;
+}
+
+.oneitem:hover .circle_on_item {
+   display: none;
+   opacity: 0;
+}
+
+.oneitem:hover .num_of_this_item {
+   display: none
+}
+
+@media (max-width:1024px) {
+   #logo-containter {
+      order: -1;
+      width: 100%
+   }
+
+   #naslov {
+      font-size: 40px;
+      text-align: left;
+   }
+
+   .header-slika {
+      min-width: 40px;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+   }
+
+   #dobrodosli {
+      font-size: 45px;
+   }
+
+}

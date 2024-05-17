@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>trebam strelicu.svg</title>
+   <link rel="icon" type="image/x-icon" sizes="196x196" href="images/KSET-sign-white.png">
+   <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="styles/style_cart.css">
+   <link rel="stylesheet" href="styles/mobile.css" media="max-width:768px">
+
+
+</head>
+
+<body>
+   <div id="container1">
+      <div id="logo-containter">
+         <a href="index.html">
+            <img id="logo-slika" src="images/KSET-sign-white.png" alt="">
+
+         </a>
+      </div>
+      <div id="naslov">trebam strelicu.svg</div>
+      <div class="kosarica-container">
+         <div id="cart_everything">
+            <a href="cart.html">
+               <img id="cart-slika" class="header-slika" src="images/shoppingcart.jpg" alt="">
+               <span class="circle">
+                  <div id="cart_num"></div>
+               </span>
+
+            </a>
+         </div>
+
+         <img id="search-slika" class="header-slika" src="images/search.jpg" alt="">
+
+
+      </div>
+
+   </div>
+
+
+   <div id="cart_container">
+      <p id="cart_text">košarica</p>
+      <div class="cart_row" id="rowtitle">
+         <p id="elem" class="text">Naziv prozvoda</p>
+         <p id="elem" class="text">Količina</p>
+      </div>
+      <div id="proizvodi_container">
+
+      </div>
+
+   </div>
+
+   <template id="cart_row_temp">
+      <div class="cart_row">
+         <p class="text" id="itemname">ime</p>
+         <div id="itemnum">
+            <button class="plusminus" id="minus">-</button>
+            <p class="text" id="num">0</p>
+            <button class="plusminus" id="plus">+</button>
+         </div>
+      </div>
+   </template>
+
+   <script src="scripts/data.js"></script>
+   <script src="scripts/cartscript.js"></script>
+</body>
+
+</html>
